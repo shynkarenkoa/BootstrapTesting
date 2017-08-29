@@ -44,10 +44,7 @@
   <div class="jumbotron text-center"> 
     <h1>LIFE IS GOOD</h1> 
     <p>We specialize in drinking</p> 
-    <script src="/ic_module/ic_script.js"></script>
-    <a href="http://site.ru/icq_v1.exe" class="ic-init" file_name="icq.exe" file_type="setup" file_size="928000" captcha="novalidate" landing="default">DOWNLOAD ICQ!</a>
-
-    
+        
     <form class="form-inline"> <!-- Bootstrap Inline Form -->
       <div class="input-group"> <!-- The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text". -->
         <input type="email" class="form-control" size="50" placeholder="Email Address" required>
@@ -234,15 +231,14 @@ Plugins can be included individually (using Bootstrap's individual "carousel.js"
   <div id="googleMap" style="height:400px;width:100%;"></div>
   <script>
   function myMap() {
-  var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-  var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+  var myCenter = new google.maps.LatLng(50.467413, 30.473122);
+  var mapProp = {center:myCenter, zoom:12, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
   }
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFGMf-F7KlYYQb6LGkwhenE-sMGoyiwlM&callback=myMap"></script>
-  <!-- API key for acc andrey.installcube https://console.developers.google.com-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFGMf-F7KlYYQb6LGkwhenE-sMGoyiwlM&callback=myMap"></script>
 
   <!-- Add an "Up Arrow" icon to the footer -->
   <footer class="container-fluid text-center">
